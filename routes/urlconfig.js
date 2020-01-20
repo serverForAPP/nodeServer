@@ -9,7 +9,7 @@ router.post('/get',async (req, res, next) => {
 
         if (!orderId) {
             res.json({
-                result: -1,
+                code: -1,
                 msg: 'orderId必须输入'
             })
         }
@@ -19,6 +19,13 @@ router.post('/get',async (req, res, next) => {
                 orderId
             }
         })
+
+        if (!result) {
+            res.json({
+                code: -1,
+                msg: 'orderId 无效'
+            })
+        }
 
         res.json({
             code: 0,
