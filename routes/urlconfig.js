@@ -10,7 +10,8 @@ router.post('/get',async (req, res, next) => {
         if (!orderId) {
             res.json({
                 code: -1,
-                msg: 'orderId必须输入'
+                msg: 'orderId必须输入',
+                result: null
             })
         }
 
@@ -23,7 +24,8 @@ router.post('/get',async (req, res, next) => {
         if (!result) {
             res.json({
                 code: -1,
-                msg: 'orderId 无效'
+                msg: 'orderId 无效',
+                result: null
             })
         }
 
@@ -32,7 +34,8 @@ router.post('/get',async (req, res, next) => {
             msg: 'success',
             result: {
                 url: result.url,
-                switch: result.switch
+                jump: result.jump,
+                showTab: result.tab
             }
         })
     } catch (e) {

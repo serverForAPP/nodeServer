@@ -23,7 +23,10 @@ module.exports = {
       developerName: {
         type: Sequelize.STRING
       },
-      switch: {
+      jump: {
+        type: Sequelize.INTEGER
+      },
+      tab: {
         type: Sequelize.INTEGER
       },
       createdAt: {

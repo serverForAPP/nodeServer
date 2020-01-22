@@ -3,7 +3,7 @@
     "username": "root",
     "password": "lvtao0410",
     "database": "APPDB",
-    "host": "127.0.0.1",
+    "host": "39.106.217.147",
     "dialect": "mysql",
     "timezone": "+08:00"
   },
