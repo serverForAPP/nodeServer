@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "esab",
+      "cwd": "/Users/lvtao/project/ESAB",
+      "script": "./bin/www",
+      "watch": true
+    }
+  ]
+}
